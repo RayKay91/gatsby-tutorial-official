@@ -50,4 +50,34 @@ For external links you still use the `<a></a>` tag.
 **Building and deploying**
 You can build using `gatsby build` and then use the public folder to upload to the server like netlify or surge.
 
+### Styling and CSS in Gatsby
 
+**Global styling**
+
+Create a folder in `src` named `styles` and in there create a file called `global.css`. In this file put some global css rules you want to apply sitewide.
+
+Create a new file called `gatsby-browser.js` in the root and in there import the global styles.
+
+`import "./src/styles/global.css"`
+
+**Component scoped styling**
+
+You could use CSS modules which works out of the box with Gatsby.
+
+Import the CSS module file named `samenameascomponent.module.css` into the component:
+```
+import React from 'react'
+import styles from './path/to/name.module.css'
+
+export default function randomComponent() {
+  return (
+    <div className={ styles.NAMEOFCLASSINCSSMODULESFILE }>Lorem ipsum</div>
+  )
+}
+```
+
+This is the CSS Modules method.
+
+**Or** you can use something like StyledComponents or Emotion to have locally scoped styles. Tutorials can be found on the gatsby site.
+
+### Nested Layout Components
