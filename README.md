@@ -87,9 +87,9 @@ Note: for the `<Link />` tag you can use activeClassName as a prop and then use 
 
 [You can checkout the plugin library for Gatsby here.](https://www.gatsbyjs.com/plugins/)
 
-You configure the plugins and tell Gatsby to use them and any options for them in the gatsby-config.js file.
+You configure the plugins and tell Gatsby to use them and any options for them in the `gatsby-config.js` file.
 
 The plugins will have instuctions on how to use them.
 
-
+Changes made to the `gatsby-config.js` file will require a restart of the dev server for changes to be put into effect.
 
