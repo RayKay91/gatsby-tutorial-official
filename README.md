@@ -78,6 +78,18 @@ export default function randomComponent() {
 
 This is the CSS Modules method.
 
+Note: for the `<Link />` tag you can use activeClassName as a prop and then use the CSS Modules method to choose a class that will be applied when that link is the active link (i.e. displayed in the browser).
+
 **Or** you can use something like StyledComponents or Emotion to have locally scoped styles. Tutorials can be found on the gatsby site.
 
-### Nested Layout Components
+
+### Plugins
+
+[You can checkout the plugin library for Gatsby here.](https://www.gatsbyjs.com/plugins/)
+
+You configure the plugins and tell Gatsby to use them and any options for them in the gatsby-config.js file.
+
+The plugins will have instuctions on how to use them.
+
+
+
