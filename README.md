@@ -213,3 +213,15 @@ export default function Layout({ children }) {
 ```
 
 In short - use page queries if querying from a page, and use `useStaticQuery` if querying from a component.
+
+**GraphiQL**
+
+This is the IDE for GraphQL and is found on the development server at `/___graphql`.
+You can access data using the GraphiQL IDE and just copy and paste the query to the React component.
+You have access to more things if you install plugins. For example, the filesystem plugin.
+
+**Transformer plugins**
+
+_Source plugins bring data into Gatsby’s_ data system and _transformer plugins transform raw content brought by source plugins_
+
+### Programmatically creating pages
