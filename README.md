@@ -93,3 +93,13 @@ The plugins will have instuctions on how to use them.
 
 Changes made to the `gatsby-config.js` file will require a restart of the dev server for changes to be put into effect.
 
+### Data in Gatsby
+
+Data in Gatsby is everything that's not a React component. You can use things like GraphQL to query APIs to pull in data from other services to populate the site.
+
+You can use Gatsby's `createPages` API to use a different method of pulling in data, but by doing so you lose a lot of benefits that come with Gatsby. Check the API page for more details.
+
+Instead use the *Gatsby way of doing things* which is to use **Graph QL**.
+
+
+
