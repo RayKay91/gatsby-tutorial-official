@@ -225,3 +225,19 @@ You have access to more things if you install plugins. For example, the filesyst
 _Source plugins bring data into Gatsby’s_ data system and _transformer plugins transform raw content brought by source plugins_
 
 ### Programmatically creating pages
+
+There are two parts to programmatically creating pages.
+
+1. Creating the 'slug' or 'path'.
+1. Creating the page.
+
+Some CMSs like WordPress will create the slug for you so you don't have to do that bit.
+
+To create pages from Markdown you need to use two Gatsby APIs.
+
+1. `onCreateNode`
+1. `createPages`
+
+You export a function from `gatsby-node.js` (this file lives in the root) with the same name as the API above you are trying to use.
+
+[Look at the Gatsby docs for programmatically creating pages.](https://www.gatsbyjs.com/tutorial/part-seven/)
