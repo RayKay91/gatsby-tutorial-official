@@ -226,12 +226,13 @@ _Source plugins bring data into Gatsby’s_ data system and _transformer plugins
 
 ### Programmatically creating pages
 
-There are two parts to programmatically creating pages.
+There are three parts to programmatically creating pages.
 
 1. Creating the 'slug' or 'path'.
+1. Creating the page template.
 1. Creating the page.
 
-Some CMSs like WordPress will create the slug for you so you don't have to do that bit.
+Some CMSs will create the slug for you so you don't have to write the code for getting the slug from MD files (WordPress, Contentful, Strapi etc.).
 
 To create pages from Markdown you need to use two Gatsby APIs.
 
